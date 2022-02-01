@@ -132,13 +132,13 @@ header .wrapper {
 .hamburger,
 .cross {
   display: none;
-  text-indent: -9999px;
+  text-indent: -9999px; 
 }
 .hamburger::before,
 .cross::before {
   content: "\f0c9";
   float: right;
-  color: #ffffff;
+  color: #000;
   font-family: "fontAwesome";
   text-indent: 0;
 }
@@ -512,9 +512,12 @@ header .wrapper,.product,.products-gallary,.biowave-contents {
   .menu {
     display: none;
   }
+  .menu ul {
+    flex-direction: column;
+  }
 
   .hamburger {
-    display: inline-block;
+    display: block;
   }
 
 }
