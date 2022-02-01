@@ -157,6 +157,10 @@ header .wrapper {
   color: #1C5C93;
   font-size: 17px;
 }
+
+.menu ul li a:hover {
+  color: #ffa500;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -222,6 +226,10 @@ header .wrapper {
 .link-icons a {
   color: #fff;
   text-indent: -99999px;
+}
+
+.link-icons a:hover {
+  color: #ffa500;
 }
 
 .link-icons a::before {
@@ -338,6 +346,10 @@ header .wrapper {
   text-align: center;
   color: #1C5C93;
   font-size: 16px;
+}
+
+.accessories a:hover {
+  color: #ffa500;
 }
 
 .accessories-names li {
