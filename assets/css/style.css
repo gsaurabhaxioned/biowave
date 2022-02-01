@@ -185,6 +185,9 @@ header .wrapper {
   opacity: 0.6;
   letter-spacing: 1px;
 }
+.slider-tabs span {
+  cursor: pointer;
+}
 
 .share-message {
   margin-right: 19px;
@@ -342,6 +345,7 @@ header .wrapper {
   padding: 80px 0;
   background-image: linear-gradient(to right,#55D5B1,#4791C5,#024072);
   color: #fff;
+  cursor: pointer;
 }
 
 .testimonial-slider p{
@@ -383,11 +387,13 @@ header .wrapper {
   border: 1px solid #000;
   border-radius: 100%;
   display: inline-block;
+  background-color: #fff;
+  opacity: 0.6;
   text-indent: -99999px;
 }
 
 .slide:hover {
-  background-color: #fff;
+  opacity: 1;
 }
 
 .more-testomonials {
@@ -482,6 +488,11 @@ footer a {
 =================================*/ 
 
 /*media query starts*/
+@media only screen and (max-width: 1440px) {
+  .accessories-photoes {
+    flex-wrap: wrap;
+  }
+}
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 header .wrapper,.product,.products-gallary,.biowave-contents {
