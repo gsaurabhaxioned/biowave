@@ -1,0 +1,509 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1519px;
+  width: 94.4%; 
+  margin: 0 auto;
+}
+/*=================================
+  Header styling starts here
+=================================*/
+header .wrapper {
+  padding: 18px 0 16px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  text-indent: 0;
+}
+
+.logo {
+  flex-basis: 36.4%;
+}
+
+.logo h1 a {
+  font-size: 36px;
+}
+.logo span {
+  display: block;
+  font-size: 8px;
+}
+
+.hamburger,
+.cross {
+  display: none;
+  text-indent: -9999px;
+}
+.hamburger::before,
+.cross::before {
+  content: "\f0c9";
+  float: right;
+  color: #ffffff;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+.cross::before {
+  content: "\f00d";
+}
+.menu ul {
+  display: flex;
+  column-gap: 45px;
+}
+.menu ul li a {
+  color: #1C5C93;
+  font-size: 17px;
+}
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/* banner styling starts  */
+.banner {
+  padding-bottom: 36px;
+}
+
+.banner-slider-wrapper {
+  width: 94.4%;
+  padding: 7px 0 7px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.banner-slider {
+  background-image: linear-gradient(to right,#55D5B1,#4791C5,#024072);
+}
+
+.slider-tabs {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+}
+
+.share-message {
+  margin-right: 19px;
+  display: inline-block;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.links {
+  font-size: 12px;
+}
+
+.links a {
+  padding: 0 4px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  opacity: 0.6;
+}
+.link-icons {
+  display: inline-block;
+}
+
+.link-icons a {
+  color: #fff;
+  text-indent: -99999px;
+}
+
+.link-icons a::before {
+  content: "\f09a";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 16px;
+  text-indent: 0;
+}
+
+.links a:nth-child(2)::before {
+  content: "\f099";
+}
+
+.links a:nth-child(3)::before {
+  content: "\f0d5";
+}
+
+.links a:nth-child(4)::before {
+  content: "\f0e1";
+}
+
+.links a:nth-child(5)::before {
+  content: "\f003";
+}
+
+.banner .wrapper {
+  width: 79%;
+  padding: 46px 0;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product h2 {
+  color: #1E6194;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.brands {
+  display: flex;
+  column-gap: 15px;
+}
+
+
+.products-gallary {
+  padding: 78px 0;
+  margin-top: 41px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.biowave-contents {
+  display: flex;
+  column-gap: 100px;
+}
+
+.biowave-content-info {
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.biowave-title {
+  margin-top: 34px;
+  display: block;
+  color: #1E6194;
+  font-size: 24px;
+}
+
+.biowave-para {
+  margin-top: 16px;
+  font-size: 13px;
+  opacity: 0.6;
+  line-height: 19px;
+}
+
+/* banner styling ends  */
+/* accessaries styling starts  */
+.accessories h2 {
+    color: #1E6194;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.accessories .wrapper {
+  width: 79%;
+  padding: 73px 0 52px 0;;
+}
+
+.accessories-photoes{
+  margin-top: 22px;
+  display: flex;
+}
+
+.accessories-photoes {
+  column-gap: 54px;
+}
+
+.accessories figure {
+  height: 158px;
+  width: 155px;
+}
+
+.accessories a {
+  margin-top: 19px;
+  display: block;
+  text-align: center;
+  color: #1C5C93;
+  font-size: 16px;
+}
+
+.accessories-names li {
+  text-align: center;
+}
+/* accessaries styling ends  */
+/* testimonial slider styling starts  */
+.slider-content2,.slider-content3,.slider-content4 {
+  display: none;
+}
+.testimonial-slider {
+  padding: 80px 0;
+  background-image: linear-gradient(to right,#55D5B1,#4791C5,#024072);
+  color: #fff;
+}
+
+.testimonial-slider p{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-size: 23px;
+  line-height: 42px;
+}
+
+.testimonial-slider .wrapper {
+  text-align: center;
+}
+
+.byron,.italic,.more-testomonials {
+  display: block;
+  font-size: 13px;
+}
+
+.byron {
+  margin-top: 51px;
+  opacity: 0.6;
+}
+
+.italic {
+  margin-top: 3px;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.slider-controls {
+  margin-top: 70px;
+}
+
+.slide {
+  width: 13px;
+  height: 13px;
+  margin: 0 10px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  display: inline-block;
+  text-indent: -99999px;
+}
+
+.slide:hover {
+  background-color: #fff;
+}
+
+.more-testomonials {
+  margin-top: 69px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.more-testomonials::after {
+  content: '';
+  width: 13%;
+  height: 2px;
+  margin: 5px auto;
+  display: block;
+  background-color: #fff;
+  opacity: 0.6;
+}
+/* testimonial slider styling ends  */
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/ 
+footer .wrapper {
+  width: 50.4%;
+  text-align: center;
+}
+.biowave-icon {
+  margin-top: 70px;
+  color: #1C5C93;
+  text-align: center;
+  text-indent: -9999px;
+}
+
+.biowave-icon::before {
+  content: "\f032";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 48px;
+  text-indent: 0;
+}
+
+.contact-info-line1,.contact-info-line2 {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  column-gap: 41px;
+}
+
+.contact-info-line2 {
+  font-size: 14px;
+}
+footer a {
+  color: #1C5C93;
+}
+.copyright {
+  margin-top: 76px;
+  display: block;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.footer-icons a {
+  padding: 0 8px;
+  text-indent: -9999px;
+}
+
+.footer-icons a::before {
+  content: "\f09a";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 25px;
+  text-indent: 0;
+}
+
+.footer-icons a:nth-child(2)::before {
+  content: "\f099";
+}
+
+.footer-icons a:nth-child(3)::before {
+  content: "\f16a";
+}
+
+.footer-icons a:nth-child(4)::before {
+  content: "\f16d";
+}
+ /*=================================
+  footer styling ends here
+=================================*/ 
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+header .wrapper,.product,.products-gallary,.biowave-contents {
+  flex-direction: column;
+  row-gap: 20px;
+}
+.accessories-photoes {
+  flex-wrap: wrap;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+}  
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+}
