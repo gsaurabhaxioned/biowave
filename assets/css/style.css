@@ -449,7 +449,7 @@ li {
 }
 
 .accessories .more-testomonials {
-  margin-top: 67px;
+  margin: 67px auto 0 auto;
   color: #024072;
   font-weight: bold;
   letter-spacing: 2px;
@@ -555,6 +555,22 @@ footer::after {
 
 /*media query starts*/
 @media only screen and (max-width: 1440px) {
+
+  .menu ul {
+    column-gap: 29px;
+  }
+
+  .links {
+    display: flex;
+    flex-basis: 25%;
+ }
+  
+  .share-message,.link-icons {
+    flex-basis: 50%;
+  }
+  .share-message {
+    font-size: 13px;
+  }
   .accessories-photoes {
     flex-wrap: wrap;
     row-gap: 20px;
@@ -581,12 +597,24 @@ header .wrapper,.product,.products-gallary,.biowave-contents {
 
 }  
 @media only screen and (max-width: 768px) {
-  .menu {
-    display: none;
+
+  .logo span {
+    font-size: 4px;
   }
+
+  .menu {
+    padding: 10px;
+    display: none;
+    background-color: #18406F;
+  }
+
   .menu ul {
     flex-direction: column;
     row-gap: 10px;
+  }
+
+  .menu ul li a {
+    color: #fff;
   }
 
   .hamburger {
