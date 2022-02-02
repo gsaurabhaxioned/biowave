@@ -463,6 +463,7 @@ footer .wrapper {
   display: flex;
   justify-content: center;
   column-gap: 41px;
+  font-weight: bold;
 }
 
 .contact-info-line2 {
@@ -510,6 +511,11 @@ footer a {
 @media only screen and (max-width: 1440px) {
   .accessories-photoes {
     flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .accessories a {
+    width: 50%;
   }
 }
 /*media query for 995px starts here*/
@@ -524,6 +530,7 @@ header .wrapper,.product,.products-gallary,.biowave-contents {
 
 .footer-icons {
   display: flex;
+  justify-content: center;
 }
 
 }  
@@ -540,4 +547,9 @@ header .wrapper,.product,.products-gallary,.biowave-contents {
     display: block;
   }
 
+  .contact-info-line1,.contact-info-line2 {
+    flex-direction: column;
+    row-gap: 20px;
+
 }
+
