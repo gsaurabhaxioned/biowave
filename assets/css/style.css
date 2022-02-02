@@ -159,6 +159,7 @@ li {
 
 .hamburger,
 .cross {
+  margin-left: auto;
   display: none;
   text-indent: -9999px; 
 }
