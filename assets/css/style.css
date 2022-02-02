@@ -110,12 +110,18 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header .wrapper {
+.header-top .wrapper {
   padding: 18px 0 24px 0;
   align-items: center;
 }
+
+.header-bottom .wrapper {
+  padding: 5px 0;
+}
 .header-top {
+  padding: 21px 0;
   display: flex;
+  align-items: center;
 }
 .hamburger {
   display: none;
@@ -176,6 +182,15 @@ header .wrapper {
 .menu ul li a:hover {
   color: #ffa500;
 }
+
+.header-bottom {
+  background-image: linear-gradient(to right,#55D5B1,#4791C5,#024072);
+}
+
+.header-bottom .wrapper {
+  display: flex;
+  align-items: center;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -189,11 +204,6 @@ header .wrapper {
   padding-bottom: 36px;
 }
 
-
-
-.header-bottom {
-  background-image: linear-gradient(to right,#55D5B1,#4791C5,#024072);
-}
 
 .slider-tabs {
   flex-basis: 83.5%;
