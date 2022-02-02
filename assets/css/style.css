@@ -185,9 +185,13 @@ li {
 
 .header-bottom {
   background-image: linear-gradient(to right,#55D5B1,#4791C5,#024072);
+  box-sizing: border-box;
 }
 
 .header-bottom .wrapper {
+  padding: 6px 0;
+}
+.header-bottom-contents {
   display: flex;
   align-items: center;
 }
@@ -202,6 +206,11 @@ li {
 /* banner styling starts  */
 .banner {
   padding-bottom: 36px;
+}
+
+.banner .wrapper {
+  width: 79%;
+  padding: 6px 0;
 }
 
 
@@ -277,10 +286,6 @@ li {
   content: "\f003";
 }
 
-.banner .wrapper {
-  width: 94.4%;
-  padding: 6px 0;
-}
 
 .products {
   margin-top: 41px;
@@ -302,10 +307,14 @@ li {
 
 
 .products-gallary {
-  padding: 78px 0;
+  padding: 78px 0 49px 0;
   margin-top: 41px;
   display: flex;
-  column-gap: 20px;
+  column-gap: 126px;
+}
+
+.products-gallary li {
+  text-align: center;
 }
 
 .biowave-contents {
@@ -342,7 +351,7 @@ li {
 
 .accessories .wrapper {
   width: 79%;
-  padding: 73px 0 52px 0;;
+  padding: 80px 0 52px 0;;
 }
 
 .accessories-photoes{
@@ -374,8 +383,6 @@ li {
 .accessories-names li {
   text-align: center;
 }
-/* accessaries styling ends  */
-/* testimonial slider styling starts  */
 .slider-content2,.slider-content3,.slider-content4 {
   display: none;
 }
@@ -400,7 +407,7 @@ li {
 
 .byron,.italic,.more-testomonials {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .byron {
@@ -434,9 +441,9 @@ li {
   opacity: 1;
 }
 
-.more-testomonials {
-  margin-top: 69px;
-  color: #fff;
+.accessories .more-testomonials {
+  margin-top: 67px;
+  color: #024072;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -450,7 +457,7 @@ li {
   background-color: #fff;
   opacity: 0.6;
 }
-/* testimonial slider styling ends  */
+/* accessories styling ends  */
 /*=================================
   main styling ends here
 =================================*/
@@ -463,7 +470,7 @@ footer .wrapper {
   text-align: center;
 }
 .biowave-icon {
-  margin-top: 70px;
+  margin-top: 51px;
   color: #1C5C93;
   text-align: center;
   text-indent: -9999px;
