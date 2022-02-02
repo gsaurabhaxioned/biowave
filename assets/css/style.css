@@ -119,7 +119,7 @@ li {
   padding: 5px 0;
 }
 .header-top {
-  padding: 21px 0;
+  padding: 26px 0;
   display: flex;
   align-items: center;
 }
@@ -184,7 +184,7 @@ li {
 }
 
 .menu {
-  margin-left: auto;
+  margin: 0 27px 0 auto;
 }
 .menu ul {
   margin-top: 7px;
@@ -220,6 +220,10 @@ li {
   opacity: 0.6;
   letter-spacing: 1px;
 }
+.slider-tabs a {
+  color: #fff;
+}
+
 .slider-tabs span {
   cursor: pointer;
 }
@@ -371,11 +375,12 @@ li {
 
 .accessories-photoes{
   margin-top: 22px;
+  column-gap: 54px;
   display: flex;
 }
 
-.accessories-photoes {
-  column-gap: 54px;
+.accessories-photoes li {
+  flex-basis: 16%; 
 }
 
 .accessories figure {
