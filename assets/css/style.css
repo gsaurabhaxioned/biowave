@@ -148,8 +148,15 @@ li {
   font-weight: bold;
   color: #18406F;
 }
+.bio:hover {
+  color: #18406F;
+}
 
 .wave {
+  color: #4589C8;
+}
+
+.wave:hover {
   color: #4589C8;
 }
 
@@ -457,6 +464,10 @@ li {
   background-color: #fff;
   opacity: 0.6;
 }
+
+.biowave-icon:hover {
+  color:#024072;
+}
 /* accessories styling ends  */
 /*=================================
   main styling ends here
@@ -505,12 +516,12 @@ footer a {
   opacity: 0.7;
 }
 
-.footer-icons a {
+.footer-icons li a {
   padding: 0 8px;
   text-indent: -9999px;
 }
 
-.footer-icons a::before {
+.footer-icons li a::before {
   content: "\f09a";
   float: right;
   font-family: "fontAwesome";
@@ -518,15 +529,15 @@ footer a {
   text-indent: 0;
 }
 
-.footer-icons a:nth-child(2)::before {
+.footer-icons li:nth-child(2) a::before {
   content: "\f099";
 }
 
-.footer-icons a:nth-child(3)::before {
+.footer-icons li:nth-child(3) a::before {
   content: "\f16a";
 }
 
-.footer-icons a:nth-child(4)::before {
+.footer-icons li:nth-child(4) a::before {
   content: "\f16d";
 }
 
