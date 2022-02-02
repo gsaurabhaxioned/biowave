@@ -129,10 +129,6 @@ li {
   text-indent: 0;
 }
 
-.logo {
-  flex-basis: 36.9%;
-}
-
 .logo h1 a {
   font-size: 36px;
 }
@@ -176,6 +172,9 @@ li {
 }
 .cross::before {
   content: "\f00d";
+}
+.menu {
+  margin-left: auto;
 }
 .menu ul {
   margin-top: 7px;
