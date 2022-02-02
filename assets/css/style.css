@@ -246,30 +246,30 @@ header .wrapper {
   color: #ffa500;
 }
 
-.link-icons a::before {
+.link-icons li a::before {
   content: "\f09a";
   float: right;
   font-family: "fontAwesome";
   font-size: 16px;
   text-indent: 0;
 }
-.links-icons a:hover::before {
+.link-icons a:hover::before {
   color: #ffa500;
 }
 
-.links a:nth-child(2)::before {
+.link-icons li:nth-child(2) a::before {
   content: "\f099";
 }
 
-.links a:nth-child(3)::before {
+.link-icons li:nth-child(3) a::before {
   content: "\f0d5";
 }
 
-.links a:nth-child(4)::before {
+.link-icons li:nth-child(4) a::before {
   content: "\f0e1";
 }
 
-.links a:nth-child(5)::before {
+.link-icons li:nth-child(5) a::before {
   content: "\f003";
 }
 
@@ -282,6 +282,7 @@ header .wrapper {
   display: flex;
 }
 .products {
+  margin-top: 41px;
   display: flex;
   justify-content: space-between;
   align-items: center;
